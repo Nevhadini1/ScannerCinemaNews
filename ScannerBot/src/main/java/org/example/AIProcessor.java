@@ -19,9 +19,8 @@ public class AIProcessor {
     private static final String OPENAI_API_KEY = System.getenv("OPENAI_API_KEY"); // Замініть на ваш API ключ
 
     public String getSummaryFromAI(String text) throws IOException {
-        if (OPENAI_API_KEY == null) {
-             throw new RuntimeException("OpenAI API key is not set");
-         }
+        System.out.println(OPENAI_API_KEY);
+        
         OkHttpClient client = new OkHttpClient();
 
         // Формуємо запит для OpenAI
