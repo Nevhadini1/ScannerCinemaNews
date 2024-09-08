@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class AIProcessor {
 
-    private static final String OPENAI_API_KEY = "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"; // Замініть на ваш API ключ
+    private static final String OPENAI_API_KEY = System.getenv("OPENAI_API_KEY"); // Замініть на ваш API ключ
 
     public String getSummaryFromAI(String text) throws IOException {
         OkHttpClient client = new OkHttpClient();
