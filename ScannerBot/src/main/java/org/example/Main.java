@@ -23,7 +23,7 @@ public class Main {
                     .withIdentity("newsTrigger", "group1")
                     .startNow() // Почати відразу після запуску
                     .withSchedule(SimpleScheduleBuilder.simpleSchedule()
-                            .withIntervalInHours(4)  // Інтервал 4 години
+                            .withIntervalInHours(3)  // Інтервал 4 години
                             .repeatForever())         // Повторювати завжди
                     .build();
 
